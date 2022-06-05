@@ -13,38 +13,41 @@
 
 
    <h1>Simulador de Plazo Fijo</h1>
-   <div id="opcion"> <h1>opciones de plazo fijo </h1>  <h2> seleccione una opcion</h2>
-    <label><input type="checkbox" id="nuevoplazofijo" value="plazofijo"> 1 - Ingresar un nuevo plazo fijo</label><br>
-    <input type="checkbox" id="mostrarplazofijo" value="plazofijo"> <label for="mostrarplazofijo">2 - Mostrar los plazos fijos registrados</label><br>
-    <label><input type="checkbox" id="salir" value="salir"> 1 - salir </label>
+   
 
 
 </div>
-
-    <form id="formulario">
-        <label for="nombre">
-            <span>¿Cuál es tu nombre?</span>
-            <input type="text" id="nombre" placeholder="Tu nombre">
+   
+    
+        <span>¿Cuál es tu nombre?</span>
+        <input type="text" id="nombre" placeholder="Tu nombre">
+        
+    
+        <span>Ingrese el capital a invertir</span>
+        <input type="number" id="capital" class="pf" onchange="calcularTotal();" />
+        <br/>
+        
+       
+            <span>Ingrese la cantidad de días del plazo fijo</span>
+            <input type="number" id="dias">
             
-        <label for="capital">
-            <span>Ingrese el capital a invertir</span>
-            <input type="number" id="capital">
-            </label>
-            <label for="dias">
-                <span>Ingrese la cantidad de días del plazo fijo</span>
-                <input type="number" id="dias">
+            
+                <span>tasa de interes</span>
+                <input type="number" id="tasa"> <br>
                 
-                </label> % tasa interes
-                <label for="tasa">
-                    <span>"</span>
-                    <input type="number" id="tasa">
-                    
-                    </label>
+              
+                <span>El interes es: </span> <span id="interes"></span> <br>
+<span>El resultado es: </span> <span id="resultado"></span>
+    
 
-        <input type="button" value="Enviar">
-        <label id="plazofijo"
-   </form>
-</div>
+</form>
+
+
+
+
+   
+
+</div
 
    
    

@@ -21,33 +21,21 @@ class PlazoFijo {
  
 	calcularInteres(capital,tasa,dias) {
 	  
-		   this.interes =0;
-		 
-	interes= capital * (tasa * dias / 365);
-		 document.getElementById('resultado').innerHTML = interes;  
+		 const  int =capital * (tasa * dias / 365);
+		 document.getElementById('resultado').innerHTML = int;  
 	
 
  };
  
  
- calcularTotal(interes) {
-   const total = 0;	
-interes = parseInt(interes); // Convertir el valor a un entero (número).
+	calcularTotal() {
+		let  sumatotal=interes + capital;
+		document.getElementById('resultado').innerHTML = sumatotal;
 	
-    total = document.getElementById('').innerHTML;
-	
-    // Aquí valido si hay un valor previo, si no hay datos, le pongo un cero "0".
-    total = (total == null || total == undefined || total == "") ? 0 : total;
-	
-    /* Esta es la suma. */
-    total = (parseInt(total) + parseInt(interes));
-	
-    // Colocar el resultado de la suma en el control "span".
-    document.getElementById('resultado').innerHTML = total;
-}
+	}
 	
  }
- 
+ calcularTotal(40000,14000)
  // Array donde se almacenan los objetos de al aplicación
  const arrayPlazoFijo = [];
  
